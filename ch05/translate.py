@@ -1,4 +1,3 @@
-import string
 # 5.7 Dictionaries
 # Figure 5-9: Translating text (badly)
 
@@ -16,10 +15,10 @@ def translate_word(word, dictionary):
     return '"' + word + '"'
 
 def translate(phrase, lang_dict):
-    UC_letters = string.ascii_uppercase
-    LC_letters = string.ascii_lowercase
+    UC_letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    LC_letters = 'abcdefghijklmnopqrstuvwxyz'
     letters = UC_letters + LC_letters
-    punctuation = string.punctuation
+    punctuation = '.,;:?'
     
     translation = ''
     word = ''

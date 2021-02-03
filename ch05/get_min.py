@@ -1,4 +1,3 @@
-import string
 # 5.7 Dictionaries
 # Finger exercise: Implement a function that meets the specification
 
@@ -10,7 +9,7 @@ def get_min(d):
         d = {x = 11, b = 12}
         get_min(d) returns 12
     """
-    letters = string.ascii_lowercase
+    letters = 'abcdefghijklmnopqrstuvwxyz'
     for c in letters:
         if c in d.keys():
             return d[c]
